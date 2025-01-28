@@ -1,0 +1,253 @@
+/* Resetting default styles for all elements */
+* {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    font-family: 'Poppins', sans-serif; /* Set a default font family */
+}
+
+
+
+/* Body styles */
+body {
+    color: #dedede; /* Text color */
+    background-color: #1c1c1c; /* Optional: Set a background color for the body */
+}
+
+/* Header styles */
+.header {
+    position: fixed; /* Fix the header at the top */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    padding: 20px 10%; /* Padding around the header */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space items evenly */
+    align-items: center; /* Center items vertically */
+    z-index: 100; /* Keep it above other elements */
+}
+
+/* Logo styles */
+.logo {
+    font-size: 25px; /* Font size for the logo */
+    color: #fff; /* Logo color */
+    text-decoration: none; /* Remove underline from the logo */
+    font-weight: 600; /* Set font weight */
+}
+
+/* Navbar link styles */
+.navbar a {
+    display: inline-block; /* Inline block for spacing */
+    font-size: 25px; /* Font size for navbar links */
+    color: #fff; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: 500; /* Set font weight */
+    margin-left: 35px; /* Space between links */
+    transition: .3s; /* Transition for hover effect */
+}
+
+/* Navbar link hover effect */
+.navbar a:hover {
+    color: rgb(255, 0, 0); /* Change color on hover */
+}                   
+
+/* Home section styles */
+.home {
+    position: relative; /* Position relative for absolute children */
+    width: 100%; /* Full width */
+    height: 100vh; /* Full viewport height */
+    background: url('c:/Users/jabaj/Downloads/labora1.jpg') no-repeat center center/cover; /* Background image */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    padding: 70px 10% 0; /* Padding around the content */
+}
+
+
+/* Home content container */
+.home-content {
+    max-width: 600px; /* Limit width of home content */
+}
+
+/* Home content heading styles */
+.home-content h3 {
+    font-size: 32px; /* Font size for h3 */
+    font-weight: 700; /* Font weight */
+    opacity: 0; /* Initial opacity for animation */
+    animation: slideBottom 1s ease forwards; /* Animation for sliding in */
+    animation-delay: .7s; /* Delay before animation starts */
+}
+
+/* Specific styles for the second h3 in home content */
+.home-content h3:nth-of-type(2) {
+    margin-bottom: 30px; /* Space below the second heading */
+}
+
+/* Span color in home content */
+.home-content h3 span {
+    color: rgb(255, 0, 0); /* Color for span text */
+}
+
+/* Home content main heading styles */
+.home-content h1 {
+    font-size: 56px; /* Font size for main heading */
+    font-weight: 700; /* Font weight */
+    margin: -3px 0; /* Remove top and bottom margin */
+}
+
+/* Home content paragraph styles */
+.home-content p {
+    font-size: 20px; /* Font size for paragraph */
+}
+
+/* Button styles */
+.btn-box {
+    display: inline-block; /* Inline block for button */
+    padding: 12px 28px; /* Padding for button */
+    background: rgb(255, 0, 0); /* Background color */
+    border-radius: 40px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    color: #081b29; /* Text color */
+    text-decoration: none; /* Remove underline */
+    transition: box-shadow 0.5s ease; /* Transition for shadow effect */
+}
+
+/* Button hover effect */
+.btn-box:hover {
+    box-shadow: 0 0 5px rgb(249, 4, 4), /* Shadow effects on hover */
+                0 0 25px rgb(255, 0, 0),
+                0 0 50px rgb(255, 0, 0),
+                0 0 100px rgb(255, 0, 0),
+                0 0 200px rgb(255, 0, 0);
+}
+
+/* Common section styles */
+section {
+    position: relative; /* Position relative for absolute children */
+    width: 100%; /* Full width */
+    min-height: 100vh; /* Ensure each section takes at least full viewport height */
+    background: url('c:/Users/jabaj/Downloads/labora1.jpg') no-repeat center center/cover; /* Background image */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    padding: 70px 10%; /* Padding around the content */
+}
+
+/* Content containers styling */
+.home-content, .about-content, .skills-content, .portfolio-content, .contact-content {
+    max-width: 600px; /* Limit width of content */
+    z-index: 1;
+    font-size: 30px;/* Ensure content appears above background */
+}
+
+/* Social media icon styles */
+.home-sci a {
+    margin-right: 15px; /* Right margin for spacing */
+    color: #dedede; /* Icon color */
+    font-size: 30px; /* Icon size */
+    transition: transform 0.3s, color 0.3s; /* Transition for hover effects */
+}
+
+/* Social media icon hover effect */
+.home-sci a:hover {
+    transform: scale(1.2); /* Scale effect on hover */
+    color: rgb(255, 64, 0); /* Change color on hover */
+}
+
+/* Button hover animation */
+.btn-box {
+    display: inline-block; /* Inline block for button */
+    padding: 10px 20px; /* Padding for button */
+    background: rgb(255, 0, 0); /* Background color */
+    color: #000; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background 0.3s, transform 0.3s; /* Transition for background and scale */
+}
+
+/* Button hover effect */
+.btn-box:hover {
+    background: #fff; /* Change background color on hover */
+    transform: scale(1.05); /* Scale effect */
+}
+
+/* Keyframe animations */
+@keyframes slideBottom {
+    0% {
+        transform: translateY(100px); /* Start below the view */
+        opacity: 0; /* Start invisible */
+    }
+    100% {
+        transform: translateY(0); /* End at original position */
+        opacity: 1; /* End visible */
+    }
+}
+
+/* Element animation styles */
+.element-right {
+    animation: slideRight 1s forwards; /* Slide in from the right */
+}
+
+.element-left {
+    animation: slideLeft 1s forwards; /* Slide in from the left */
+}
+
+/* Keyframes for slide right animation */
+@keyframes slideRight {
+    0% {
+        transform: translateX(100%); /* Start offscreen right */
+        opacity: 0; /* Start invisible */
+    }
+    100% {
+        transform: translateX(0); /* End at original position */
+        opacity: 1; /* End visible */
+    }
+}
+
+/* Keyframes for slide left animation */
+@keyframes slideLeft {
+    0% {
+        transform: translateX(-100%); /* Start offscreen left */
+        opacity: 0; /* Start invisible */
+    }
+    100% {
+        transform: translateX(0); /* End at original position */
+        opacity: 1; /* End visible */
+    }
+}
+
+/* Footer styles */
+.footer {
+    background: #1c1c1c; /* Footer background color */
+    color: #dedede; /* Text color */
+    padding: 20px 10%; /* Padding for footer */
+    text-align: center; /* Center text */
+    position: relative; /* Position relative */
+    bottom: 0; /* Align to bottom */
+    width: 100%; /* Full width */
+}
+
+/* Footer content paragraph styles */
+.footer-content p {
+    margin: 0; /* Remove margin */
+    font-size: 16px; /* Font size */
+}
+
+/* Social media icons in footer */
+.footer-social {
+    margin-top: 10px; /* Space above social icons */
+}
+
+/* Social link styles */
+.footer-social .social-link {
+    display: inline-block; /* Inline block for spacing */
+    margin: 0 10px; /* Side margins for spacing */
+    font-size: 24px; /* Icon size */
+    color: #dedede; /* Icon color */
+    transition: color 0.3s, transform 0.3s; /* Transition for hover effects */
+}
+
+/* Social link hover effect */
+.footer-social .social-link:hover {
+    color: rgb(255, 0, 0); /* Change color on hover */
+    transform: scale(1.1); /* Scale effect */
+}
