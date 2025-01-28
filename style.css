@@ -57,7 +57,7 @@ body {
     position: relative; /* Position relative for absolute children */
     width: 100%; /* Full width */
     height: 100vh; /* Full viewport height */
-    background: url('c:/Users/jabaj/Downloads/labora1.jpg') no-repeat center center/cover; /* Background image */
+    background: url('labora1.jpg') no-repeat center center/cover; /* Background image */
     display: flex; /* Use flexbox for layout */
     align-items: center; /* Center items vertically */
     padding: 70px 10% 0; /* Padding around the content */
@@ -126,7 +126,7 @@ section {
     position: relative; /* Position relative for absolute children */
     width: 100%; /* Full width */
     min-height: 100vh; /* Ensure each section takes at least full viewport height */
-    background: url('c:/Users/jabaj/Downloads/labora1.jpg') no-repeat center center/cover; /* Background image */
+    background: url('labora1.jpg') no-repeat center center/cover; /* Background image */
     display: flex; /* Use flexbox for layout */
     align-items: center; /* Center items vertically */
     padding: 70px 10%; /* Padding around the content */
